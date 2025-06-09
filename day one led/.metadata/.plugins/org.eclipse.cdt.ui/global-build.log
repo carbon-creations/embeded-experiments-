@@ -1,0 +1,264 @@
+18:30:24 **** Incremental Build of configuration Debug for project BlackPill_blink ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "BlackPill_blink.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\wrigh\Desktop\embeded experiments\day one led\BlackPill_blink\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BlackPill_blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BlackPill_blink.elf
+ 
+arm-none-eabi-size  BlackPill_blink.elf 
+arm-none-eabi-objdump -h -S BlackPill_blink.elf  > "BlackPill_blink.list"
+   text	   data	    bss	    dec	    hex	filename
+   7584	     12	   1644	   9240	   2418	BlackPill_blink.elf
+Finished building: default.size.stdout
+ 
+Finished building: BlackPill_blink.list
+ 
+18:37:41 **** Incremental Build of configuration Debug for project BlackPill_blink ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:108:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  108 |   printf("first application starting\n");
+      |   ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:108:3: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  108 |   printf("first application starting\n");
+      |   ^~~~~~
+../Core/Src/main.c:108:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "BlackPill_blink.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\wrigh\Desktop\embeded experiments\day one led\BlackPill_blink\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BlackPill_blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BlackPill_blink.elf
+ 
+arm-none-eabi-size  BlackPill_blink.elf 
+arm-none-eabi-objdump -h -S BlackPill_blink.elf  > "BlackPill_blink.list"
+   text	   data	    bss	    dec	    hex	filename
+  10928	    104	   1976	  13008	   32d0	BlackPill_blink.elf
+Finished building: default.size.stdout
+ 
+Finished building: BlackPill_blink.list
+ 
+18:40:00 **** Incremental Build of configuration Debug for project BlackPill_blink ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:108:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  108 |   printf("first application starting\n");
+      |   ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:108:3: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  108 |   printf("first application starting\n");
+      |   ^~~~~~
+../Core/Src/main.c:108:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:117:26: error: expected ';' before '}' token
+  117 |           HAL_Delay(1000)
+      |                          ^
+      |                          ;
+  118 |     /* USER CODE BEGIN 3 */
+  119 |   }
+      |   ~                       
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+18:40:17 **** Incremental Build of configuration Debug for project BlackPill_blink ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:108:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  108 |   printf("first application starting\n");
+      |   ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:108:3: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  108 |   printf("first application starting\n");
+      |   ^~~~~~
+../Core/Src/main.c:108:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "BlackPill_blink.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\wrigh\Desktop\embeded experiments\day one led\BlackPill_blink\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BlackPill_blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BlackPill_blink.elf
+ 
+arm-none-eabi-size  BlackPill_blink.elf 
+arm-none-eabi-objdump -h -S BlackPill_blink.elf  > "BlackPill_blink.list"
+   text	   data	    bss	    dec	    hex	filename
+  11024	    104	   1976	  13104	   3330	BlackPill_blink.elf
+Finished building: default.size.stdout
+ 
+Finished building: BlackPill_blink.list
+ 
+18:45:19 **** Incremental Build of configuration Debug for project BlackPill_blink ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:108:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  108 |   printf("first application starting\n");
+      |   ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:108:3: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  108 |   printf("first application starting\n");
+      |   ^~~~~~
+../Core/Src/main.c:108:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:183:13: error: invalid storage class for function 'MX_USART1_UART_Init'
+  183 | static void MX_USART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:216:13: error: invalid storage class for function 'MX_GPIO_Init'
+  216 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:267:1: error: expected declaration or statement at end of input
+  267 | }
+      | ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:51:13: warning: 'MX_GPIO_Init' used but never defined
+   51 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:52:13: warning: 'MX_USART1_UART_Init' used but never defined
+   52 | static void MX_USART1_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:258:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  258 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:216:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  216 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:183:13: warning: 'MX_USART1_UART_Init' defined but not used [-Wunused-function]
+  183 | static void MX_USART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:137:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  137 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+18:47:00 **** Incremental Build of configuration Debug for project BlackPill_blink ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:108:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  108 |   printf("first application starting\n");
+      |   ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:108:3: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  108 |   printf("first application starting\n");
+      |   ^~~~~~
+../Core/Src/main.c:108:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "BlackPill_blink.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\wrigh\Desktop\embeded experiments\day one led\BlackPill_blink\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BlackPill_blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BlackPill_blink.elf
+ 
+arm-none-eabi-size  BlackPill_blink.elf 
+arm-none-eabi-objdump -h -S BlackPill_blink.elf  > "BlackPill_blink.list"
+   text	   data	    bss	    dec	    hex	filename
+  12664	    104	   1976	  14744	   3998	BlackPill_blink.elf
+Finished building: default.size.stdout
+ 
+Finished building: BlackPill_blink.list
+ 
+18:57:06 **** Incremental Build of configuration Debug for project BlackPill_blink ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:108:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  108 |   printf("first application starting\n");
+      |   ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:108:3: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  108 |   printf("first application starting\n");
+      |   ^~~~~~
+../Core/Src/main.c:108:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "BlackPill_blink.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\wrigh\Desktop\embeded experiments\day one led\BlackPill_blink\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BlackPill_blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BlackPill_blink.elf
+ 
+arm-none-eabi-size  BlackPill_blink.elf 
+arm-none-eabi-objdump -h -S BlackPill_blink.elf  > "BlackPill_blink.list"
+   text	   data	    bss	    dec	    hex	filename
+  12732	    104	   1976	  14812	   39dc	BlackPill_blink.elf
+Finished building: default.size.stdout
+ 
+Finished building: BlackPill_blink.list
+ 
+18:57:30 **** Incremental Build of configuration Debug for project BlackPill_blink ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:108:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  108 |   printf("first application starting\n");
+      |   ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:108:3: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  108 |   printf("first application starting\n");
+      |   ^~~~~~
+../Core/Src/main.c:108:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "BlackPill_blink.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\wrigh\Desktop\embeded experiments\day one led\BlackPill_blink\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BlackPill_blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BlackPill_blink.elf
+ 
+arm-none-eabi-size  BlackPill_blink.elf 
+arm-none-eabi-objdump -h -S BlackPill_blink.elf  > "BlackPill_blink.list"
+   text	   data	    bss	    dec	    hex	filename
+  12728	    104	   1976	  14808	   39d8	BlackPill_blink.elf
+Finished building: default.size.stdout
+ 
+Finished building: BlackPill_blink.list
+ 
+19:06:15 **** Incremental Build of configuration Debug for project BlackPill_blink ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:108:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  108 |   printf("first application starting\n");
+      |   ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:108:3: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  108 |   printf("first application starting\n");
+      |   ^~~~~~
+../Core/Src/main.c:108:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "BlackPill_blink.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\wrigh\Desktop\embeded experiments\day one led\BlackPill_blink\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BlackPill_blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BlackPill_blink.elf
+ 
+arm-none-eabi-size  BlackPill_blink.elf 
+arm-none-eabi-objdump -h -S BlackPill_blink.elf  > "BlackPill_blink.list"
+   text	   data	    bss	    dec	    hex	filename
+  12732	    104	   1976	  14812	   39dc	BlackPill_blink.elf
+Finished building: default.size.stdout
+ 
+Finished building: BlackPill_blink.list
+ 
+19:10:41 **** Incremental Build of configuration Debug for project BlackPill_blink ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:122:11: error: 'last_print' undeclared (first use in this function); did you mean 'last_blink'?
+  122 |           last_print = now;
+      |           ^~~~~~~~~~
+      |           last_blink
+../Core/Src/main.c:122:11: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:10:54 **** Incremental Build of configuration Debug for project BlackPill_blink ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "BlackPill_blink.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\wrigh\Desktop\embeded experiments\day one led\BlackPill_blink\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BlackPill_blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BlackPill_blink.elf
+ 
+arm-none-eabi-size  BlackPill_blink.elf 
+arm-none-eabi-objdump -h -S BlackPill_blink.elf  > "BlackPill_blink.list"
+   text	   data	    bss	    dec	    hex	filename
+   7680	     12	   1644	   9336	   2478	BlackPill_blink.elf
+Finished building: default.size.stdout
+ 
+Finished building: BlackPill_blink.list
+ 
