@@ -193,3 +193,39 @@ java.lang.Exception: Resource '/BlackPill_blink' does not exist.
 
 !ENTRY org.eclipse.cdt.core 1 0 2025-06-09 11:34:48.784
 !MESSAGE Indexed 'BlackPill_blink' (20 sources, 117 headers) in 2.39 sec: 10,700 declarations; 42,210 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.45%)
+!SESSION 2025-06-09 17:48:11.435 -----------------------------------------------
+eclipse.buildId=Version 1.18.1
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-06-09 17:48:16.986
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-06-09 17:48:21.577
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-06-09 17:48:21.579
+!MESSAGE Log4j2 initialized with config file C:\Users\wrigh\Desktop\embeded experiments\blackPill\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-06-09 17:48:28.575
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-06-10 11:03:31.907 -----------------------------------------------
+eclipse.buildId=Version 1.18.1
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-06-10 11:03:36.823
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-06-10 11:03:40.998
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-06-10 11:03:40.999
+!MESSAGE Log4j2 initialized with config file C:\Users\wrigh\Desktop\embeded experiments\blackPill\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-06-10 11:03:47.909
+!MESSAGE Started RMI Server, listening on port 41337
